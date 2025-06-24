@@ -1,0 +1,131 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2575fc;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #6a11cb;
+}
+
+a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #2575fc;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+p {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.container a {
+  background: #2575fc;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.container a:hover {
+  background: #6a11cb;
+  text-decoration: none;
+}
+
+/* Contenitore pulsanti */
+.button-group {
+  display: flex;
+  justify-content: center;  /* centrati orizzontalmente */
+  gap: 15px;                /* spazio tra i pulsanti */
+  margin: 20px 0;           /* margine sopra e sotto */
+}
+
+/* Stile dei pulsanti già presente */
+button {
+  padding: 10px 20px;       /* un po' più largo */
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2575fc;
+  color: white;
+  transition: background 0.3s;
+  flex: 1;                  /* i pulsanti occupano uguale spazio */
+  max-width: 140px;         /* larghezza massima */
+}
+
+button:hover {
+  background: #6a11cb;
+}
